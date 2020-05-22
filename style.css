@@ -10,6 +10,7 @@
 --dark-blue: #191E5D;
 --white: #E0E6E9;
 --dark-white: #BCAFAA;
+--dark2-white: rgb(179, 166, 162);
 --orange: #FA5807;
 --yellow: #caae0ed8;
 
@@ -107,4 +108,47 @@ ul li a{
     border-bottom: 2px solid var(--brown);
 }
 
+/*--------------------Cards---------------------*/
 
+.cards{
+    
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px;
+    
+}
+
+.card{
+    background: var(--dark-white);
+    box-shadow: 2px 2px 2px var(--verydark);
+}
+
+.card_img_container img{
+    width: 100%;
+}
+
+.card_content, .card_info{
+    padding: 10px 20px;
+}
+
+.card_info{
+    background-color: var(--dark2-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price{
+    background-color: var(--mid-blue);
+    color: var(--white);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.card_info p{
+    padding: 5px 0px;
+}
