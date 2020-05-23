@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kits para Ensaio</title>
-    <link rel="stylesheet" href="/style.css">
+{% extends "layout.njk" %}
 
-</head>
+{% block head %}
 
-<body>
+    <title>Ensaie!</title>
 
-    <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/kits">Kits</a></li>
-            </ul>
-        </nav>
-    </header>
+{% endblock %}
+
+
+{% block content %}
 
     <div class="container">
         <a href="/kits"><img src="https://gravadora.novotempo.com/artistas/artista_11.jpeg" alt="Arautos do Rei"></a>
@@ -31,6 +21,4 @@
         </ul>
     </div>
 
-</body>
-
-</html>
+    {% endblock %}
