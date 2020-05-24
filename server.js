@@ -33,6 +33,19 @@ server.get("/kits", function(req, res){
     return res.render("kits", {items: videos})  
 })
 
+server.get("/video", function(req, res){
+    const id = req.query.id
+
+    const video = videos.find(function(video){
+        return video.id == id
+    })
+
+       if(!video){
+        return res.render("404", )}
+
+    return res.render("video", { item: video })
+})
+
 server.listen(5500, function(){         
     console.log("Server is Running!");  
 })                                       
