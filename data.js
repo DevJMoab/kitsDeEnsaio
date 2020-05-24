@@ -4,14 +4,16 @@ module.exports = [
         img: "https://img.youtube.com/vi/jMCLv4bHRhs/maxresdefault.jpg",
         title: "Resgatado",
         duration: "5:02",
-        price: "Grátis"
+        price: "Grátis",
+        featured: true
     },
     {
         id: "F18qxXKJ1Dg",
         img: "https://img.youtube.com/vi/F18qxXKJ1Dg/maxresdefault.jpg",
         title: "Resgatado - PlayBack",
         duration: "5:01",
-        price: "Grátis"
+        price: "Grátis",
+        featured: true
     },
     {
         id: "UrFiPTHIYU4",
@@ -40,6 +42,7 @@ module.exports = [
         title: "Kit Resgatado - Baixo",
         duration: "5:14",
         price: "Grátis"
+
     }
     
 ]

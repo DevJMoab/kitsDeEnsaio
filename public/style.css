@@ -121,7 +121,7 @@ ul li a{
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 20px;
     
 }
 
@@ -134,7 +134,9 @@ ul li a{
 }
 
 .card{
+    position: relative;
     background: var(--dark-white);
+    cursor: pointer;
 }
 
 .card_img_container img{
@@ -208,3 +210,20 @@ iframe{
     top: 5%;
 }
 
+
+/*--------------------featured---------------------*/
+
+ .card_img_container .featured-wrapper {
+    position: relative;
+}
+
+.featured{
+    position: absolute;
+    background: var(--orange);
+    color: var(--white);
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    border-radius: 22px;
+}
