@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+
+    <title>Ensaie!</title>
+
+{% endblock %}
+
+
+{% block content %}
+
+    <div class="container">
+        <a href="/kits"><img src={{dataIndex.avatar_url}} alt="{{dataIndex.name}}{{dataIndex.surname}}"></a>
+        <h1>{{dataIndex.name}}</h1>
+        <h2>{{dataIndex.surname}}</h2>
+        <p>{{dataIndex.description}}</p>
+        <ul>
+        {% for link in dataIndex.links %}
+            <li><a class="link" href={{link.url}} target="_black">{{link.name}}</a></li>
+        {% endfor %}
+        </ul>
+    </div>
+
+    {% endblock %}

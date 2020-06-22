@@ -1,0 +1,268 @@
+@import "https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap";
+
+:root{
+--dark: #111111;
+--mid-dark: rgb(26, 25, 25);
+--mid-brown: #333;
+--brown: #4F3952;
+--purple: #7062E9;
+--mid-blue:#283CAF;
+--dark-blue: #191E5D;
+--white: #E0E6E9;
+--dark-white: #BCAFAA;
+--dark2-white: rgb(179, 166, 162);
+--orange: #FA5807;
+--yellow: #caae0ed8;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+} 
+
+header {
+    padding: 35px;
+    border-bottom: 1px solid var(--mid-brown);
+    background: var(--mid-dark);
+}
+
+.titulo h1{
+    padding: 20px 0px 30px 0px;
+    text-transform: uppercase;
+    color: var(--dark-white);
+    text-align: center;
+
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    background: var(--dark);
+    position: relative;
+    
+}
+
+ ul{
+    text-align: center;
+}
+
+ ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 20px;
+}
+
+.menu a:hover{
+    color: var(--dark-white);
+    border-bottom: 2px solid var(--dark-white);
+    padding-bottom: 34px;
+}
+
+.container{
+    text-align: center;
+    padding: 30px 20px;
+    color: var(--dark-white);
+}
+
+.container img{
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid var(--brown);
+}
+
+.container img:hover{
+    width: 250px;
+    border-radius: 2%;
+    border: 2px solid var(--brown);
+    transition: 900ms;
+}
+
+.container h1{
+    padding: 20px 0px 0px 0px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container h2{
+    color: var(--brown);
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.container p{
+    font-family: 'Rajdhani', sans-serif;
+    width: 350px;
+    font-size: 16px;
+    margin: 15px auto;
+}
+
+.container ul li a{
+    border-bottom: 2px solid var(--brown);
+    padding-bottom: 5px;
+}
+.container a:hover{
+    color: var(--brown);
+}
+
+/*--------------------Cards---------------------*/
+
+.cards{
+    
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    
+}
+
+.cards > .card:nth-child(1){
+    grid-column: 1/3;
+}
+
+.cards > .card:nth-child(2){
+    grid-column:3/5;
+}
+
+.card{
+    position: relative;
+    background: var(--dark-white);
+    cursor: pointer;
+}
+
+.card_img_container img{
+    width: 100%;
+}
+
+.card_content, .card_info{
+    padding: 10px 20px;
+}
+
+.card_info{
+    background-color: var(--dark2-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card_price{
+    background-color: var(--mid-blue);
+    color: var(--white);
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.card_info p{
+    padding: 5px 0px;
+}
+
+/*--------------------Modal---------------------
+
+.modal-overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: var(--white);
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color:var(--dark);
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    cursor: pointer;
+
+}
+
+/*--------------------Modal.active---------------------
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
+
+
+/*--------------------featured---------------------*/
+
+ .card_img_container .featured-wrapper {
+    position: relative;
+}
+
+.featured{
+    position: absolute;
+    background: var(--orange);
+    color: var(--white);
+    padding: 8px;
+    position: absolute;
+    top: -15px;
+    right: 5px;
+    border-radius: 22px;
+}
+
+/*--------------------video---------------------*/
+
+.video{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.video .card{
+    cursor: initial;
+}
+
+.card_video_container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+.card_video_container iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/*--------------------404---------------------*/
+
+.erro{
+    color: var(--white);
+    text-align: center;
+}
+
+.erro h1{
+    font-size: 100px;
+}
+
+.erro p{
+    font-size: 12px;
+}
